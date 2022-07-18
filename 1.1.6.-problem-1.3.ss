@@ -1,14 +1,13 @@
-#lang scheme
+#lang sicp
+
 (define (square x) (* x x))
 
 (define (sum-of-squares x y)
-(+ (square x) (square y)))
+  (+ (square x) (square y)))
 
-(define (f a b c)
+(define (sum-square-two-largest a b c)
   (cond ((and (> a b) (> c b)) (sum-of-squares a c))
-        ((and (> c a) (> b a)) (sum-of-squares c b))
         ((and (> a c) (> b c)) (sum-of-squares a b))
-        )
-  )
+        (else (sum-of-squares b c))))
 
-(f 1 2 3)
+(sum-square-two-largest 1 3 5)
