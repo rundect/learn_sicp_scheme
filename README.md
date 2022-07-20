@@ -1,6 +1,6 @@
-# Structure and Interpretation of Computer Programs — SICP
+## Structure and Interpretation of Computer Programs — SICP
 
-## Оглавление
+### Оглавление
  + [1. ПОСТРОЕНИЕ АБСТРАКЦИЙ С ПОМОЩЬЮ ПРОЦЕДУР](#1)
    + [1.1. Элементы программирования](#1.1)
       + [1.1.1. Выражения](#1.1.1)
