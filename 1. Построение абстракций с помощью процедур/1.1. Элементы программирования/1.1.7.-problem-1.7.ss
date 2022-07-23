@@ -25,3 +25,23 @@
 (sqrt (+ 100 37))
 (sqrt (+ (sqrt 2) (sqrt 3)))
 (square (sqrt 1000))
+
+
+(define (better-good-enough? prev-guess guess x)
+  (< (abs (- guess prev-guess)) 0.001))
+
+
+(define (bettersqrt-iter prev-guess guess x)
+  (if (better-good-enough? prev-guess guess x)
+      guess
+      (bettersqrt-iter (improve guess x)
+                 x)))
+
+(define (better-sqrt x)
+  (bettersqrt-iter 0 1.0 x))
+
+(sqrt 9)
+(sqrt (+ 100 37))
+(sqrt (+ (sqrt 2) (sqrt 3)))
+(square (sqrt 1000))
+
