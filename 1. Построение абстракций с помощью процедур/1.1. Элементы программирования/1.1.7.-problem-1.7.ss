@@ -40,7 +40,7 @@
 (define (better-sqrt x)
   (bettersqrt-iter 0 1.0 x))
 
-(sqrt 9)
+(better-sqrt 9)
 (sqrt (+ 100 37))
 (sqrt (+ (sqrt 2) (sqrt 3)))
 (square (sqrt 1000))
